@@ -1,0 +1,119 @@
+.container{
+    max-width: 1320px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+/* heder */
+.header{
+    background-color: #AA0601;
+    color: #ffffff;
+}
+.header .logo{
+    background: url('../img/logo-white.png') no-repeat center / contain;
+    display: inline-block;
+    width: 80px;
+    height: 48px;
+}
+.nav .nav-link{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 25px 0;
+}
+/* .banner{
+    background:url('../img/home-header.png') no-repeat center / cover;
+} */
+/* Footer */
+.footer{
+    background-color: #AA0601;
+    color: #ffffff;
+    padding: 48px 0 32px;
+}
+.sub-nav{
+    font-size: 16px;
+    line-height: 1.5;
+    gap:64px;
+}
+.contact-us {
+    font-size: 36px;
+    line-height: 1.5;
+    padding-bottom: 43px;
+    border-bottom: 1px solid #ffffff;
+}
+.tel{
+    margin-bottom: 8px;
+}
+/* .tel::before{
+    content:url('/img/phone.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 22px;
+}
+.mail::before{
+    content:url('/img/email.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 22px;
+} */
+.social-btn{
+    gap:32px;
+}
+.social-btn img{
+   width: 48px;
+}
+.copyright{
+    margin-top: 32px;
+}
+.copyright p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.copyright ul{
+    gap: 48px;
+}
+.copyright li{
+    font-size: 14px;
+    line-height: 1.5;
+}
+@media screen and (max-width:768px ) {
+    .container{
+        max-width: 720px;
+    }
+}
+@media screen and (max-width:375px) {
+    .container{
+        max-width: 373px;
+    }
+    /* footer */
+    .footer{
+        position: relative;
+        padding: 24px 0;
+    }
+    .footer .sub-nav{
+        display: none;
+    }
+    .social-btn{
+        position: absolute;
+        top:24px;
+        right: 14px;
+        gap:8px;
+    }
+    .social-btn img{
+        width:24px ;
+    }
+    .contact-us{
+        font-size: 24px;
+        padding-bottom: 24px;
+    }
+    .tel,
+    .mail{
+        font-size: 16px;
+    }
+    .copyright{
+        margin-top: 16px;
+        gap: 8px;
+    }
+    .copyright .d-flex{
+        flex-direction: column;
+        gap: 8px;
+    }
+}
